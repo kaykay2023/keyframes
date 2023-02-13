@@ -1,0 +1,89 @@
+ body{
+  height:200vh;
+ }
+ 
+ .main{
+  background-color:white;
+  height: 400px;
+  width: 400px;
+  
+  
+}
+.chase{
+  display: flex;
+  background-color: white;
+  width: 100%;
+}
+
+.jerry,.tom{
+  
+  height: 150px;
+  transition:transform 12s ease-in ;
+  animation: left-to-right 5s ease-in infinite ;
+}
+
+.tomImg,.jerryImg{
+width:20vw;
+height: 20vh;
+
+}
+
+  @keyframes left-to-right {
+0%{
+   transform: translateX(0)};
+
+33%{ 
+  transform: translateY(100%)};
+
+ 65%{ 
+  transform: translateX(100%) translateY(100%);
+} 
+
+100% {
+   transform: translateX(100%);
+}
+}   
+
+
+.main1{
+  background-color: rgb(74, 20, 161);
+  height: 500px;
+  width: 600px;
+  /* display:flex; */
+  
+}
+.jerry1{
+  height: 130px;
+  width: 130px;
+  border-radius:50%;
+  transition:transform 12s ease-in ;
+  animation: bounce  1s ease-in forwards infinite alternate ;
+}
+
+  @keyframes bounce {
+  0%{
+     transform: translateX(0);
+    }
+  
+  25%{ 
+    transform: translateY(100%);
+  }
+  
+  50%{  
+    transform: translateX(100%) translateY(100%) translateX(100%) translateY(100%);
+   } 
+   
+   75%{
+    transform:translateY(100%);
+   }
+  
+  100% {
+     transform: translateX(100%);
+  }
+  } 
+  
+  
+
+
+
+  
